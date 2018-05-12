@@ -1,6 +1,6 @@
 <html>
 <header class="row">
-    @include('includes.header')
+    @include('includes.head')
 </header>
 
 <body>

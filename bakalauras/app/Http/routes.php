@@ -11,11 +11,21 @@
 |
 */
 Route::get('login', array('uses' => 'HomeController@showLogin'));
-
-// route to process the form
 Route::post('login', array('uses' => 'HomeController@doLogin'));
-
 Route::get('logout', array('uses' => 'HomeController@doLogout'));
+
+Route::get('category', 'CategoryController@create')->name('category.create');
+Route::post('category', 'CategoryController@store')->name('category.store');
+Route::get('cat', 'CategoryController@index')->name('category.index');
+Route::post('cat', 'CategoryController@delete')->name('category.delete');
+Route::post('catundo', 'CategoryController@undo')->name('category.undo');
+
+Route::get('model', 'ModelController@create')->name('model.create');
+Route::post('model', 'ModelController@store')->name('model.store');
+Route::get('mod', 'ModelController@index')->name('model.index');
+Route::post('mod', 'ModelController@delete')->name('model.delete');
+Route::post('modundo', 'ModelController@undo')->name('model.undo');
+
 
 Route::get('/', function () {
     return view('welcome');
