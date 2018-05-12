@@ -26,6 +26,9 @@ Route::get('mod', 'ModelController@index')->name('model.index');
 Route::post('mod', 'ModelController@delete')->name('model.delete');
 Route::post('modundo', 'ModelController@undo')->name('model.undo');
 
+Route::get('register', 'RegisterController@create')->name('user.create');
+Route::post('register', 'RegisterController@store')->name('user.store');
+Route::get('reg', 'RegisterController@index')->name('user.index');
 
 Route::get('/', function () {
     return view('welcome');

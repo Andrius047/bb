@@ -79,8 +79,8 @@ body {
 table {
     border-collapse: collapse;
 }
-td{
-
+td, th{
+    padding: 5px;
 }
 table, th, td {
     border: 1px solid black;

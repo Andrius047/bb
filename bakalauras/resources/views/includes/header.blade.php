@@ -8,7 +8,8 @@
             <li><a href="/">Home</a></li>
             <li><a href="/cat">category</a></li>
             <li><a href="/mod">models</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/reg">Users</a></li>
+            <li><a href="/item">Items</a></li>
             <li><a href="{{ URL::to('logout') }}">Logout</a></li>
         </ul>
     </div>
